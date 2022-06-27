@@ -38,8 +38,8 @@ jobs:
       # Run dotnet build and publish
       - name: dotnet build and publish
         run: |
-          dotnet build --configuration Release
-          dotnet publish -c Release -o myapp 
+          dotnet build --configuration Debug
+          dotnet publish -c Debug -o myapp 
           
       # Deploy to Azure Web apps staging slot
       - name: 'Run Azure webapp deploy action using publish profile credentials'
